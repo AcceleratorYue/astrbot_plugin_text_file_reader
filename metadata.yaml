@@ -1,0 +1,18 @@
+name: astrbot_plugin_text_file_reader
+display_name: 文本文件读取
+short_desc: 读取消息附带的纯文本文件，保留发送者/引用来源后交给模型
+desc: >-
+  让 AstrBot 读取用户随消息发来的纯文本文件（.txt/.md/.markdown 等），
+  把内容作为临时资料注入当前 LLM 请求。支持私聊直接发送、群聊先发文件再 @Bot
+  或引用文件消息后提问，并标注原发送者，避免把别人的文件算到当前用户头上。
+version: 0.2.0
+author: AcceleratorYue
+repo: https://github.com/AcceleratorYue/astrbot_plugin_text_file_reader
+social_link: https://github.com/AcceleratorYue
+astrbot_version: ">=4.16,<5"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 文本文件
+  - 文件读取
+  - 群聊
